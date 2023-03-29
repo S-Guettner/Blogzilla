@@ -14,7 +14,7 @@ const upload = multer({
     limits: { fileSize: 2000000 }
 })
 
-app.use(cors({origin: "http://localhost:5174" }))
+app.use(cors({origin: "http://localhost:5173" }))
 
 // kp ????
 app.use("/images", express.static("./images"))
