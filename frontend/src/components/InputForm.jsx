@@ -5,6 +5,8 @@ const InputForm = ({ setPosts }) => {
 
     const [sizeError, setSizeError] = useState(false)
 
+
+    
     const handleSubmit = (e) => {
         e.preventDefault()
         const formData = new FormData(e.target)
