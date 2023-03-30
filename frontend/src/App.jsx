@@ -1,6 +1,7 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './pages/Home'
 import AdminPage from './pages/AdminPage'
+import DetailsPage from './pages/DetailsPage'
 
 import { createContext, useState,useEffect } from 'react'
 
@@ -14,7 +15,7 @@ function App() {
         fetch("http://localhost:7777/api/getPosts")
         .then(res => res.json())
         .then(data => setPosts(data))
-        },[])
+        },[posts])
   
   return (
     <postData.Provider value={posts}>
@@ -22,6 +23,7 @@ function App() {
         <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/admin' element={<AdminPage />}/>
+            <Route path='/details/:id' element={<DetailsPage />}/>
         </Routes>
     </BrowserRouter>
     </postData.Provider>

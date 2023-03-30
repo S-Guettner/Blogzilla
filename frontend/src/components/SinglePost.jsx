@@ -1,14 +1,14 @@
-const SinglePost = ({ post }) => {
+import { Link } from "react-router-dom"
+
+const SinglePost = ({ post ,index }) => {
     return (
-        <div>
+        <Link to={`/details/${index}`}>
             <h1>{post.title}</h1>
-            <p>{post.username}</p>
-            <p>{post.email}</p>
             <p>{post.message}</p>
             <img style={{
                 width: "100px"
             }} src={`http://localhost:7777/${post.image}`}></img>
-        </div>
+        </Link>
     )
 }
 

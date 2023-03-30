@@ -1,7 +1,7 @@
 import { useState} from 'react'
 import InputForm from '../components/InputForm'
 import { Link } from 'react-router-dom'
-import Home from './Home'
+
 
 const AdminPage = () => {
     
