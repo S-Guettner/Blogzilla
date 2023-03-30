@@ -11,7 +11,7 @@ const InputForm = ({ setPosts }) => {
         e.preventDefault()
         const formData = new FormData(e.target)
 
-        if (!sizeError) { // wir negieren den Wert von sizeError aus einem true wird ein false und andersrum
+        if (!sizeError) { 
             fetch("http://localhost:7777/api/addPost", {
                 method: "POST",
                 body: formData
