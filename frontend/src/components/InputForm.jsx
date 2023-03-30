@@ -37,11 +37,11 @@ const InputForm = ({ setPosts }) => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input className="border-2 block p-1" name="username" type="text" placeholder="username" ></input>
+                {/* <input className="border-2 block p-1" name="username" type="text" placeholder="username" ></input> */}
                 <input className="border-2 block p-1" name="title" type="text" placeholder="title" ></input>
-                <input className="border-2 block p-1" name="email" type="email" placeholder="email" ></input>
-                <input className="border-2 block p-1" name="message" type="text" placeholder="message" ></input>
+                {/* <input className="border-2 block p-1" name="email" type="email" placeholder="email" ></input> */}
                 <input className="border-2 block p-1" name="postImage" type="file" onChange={checkSize}></input>
+                <input className="border-2 block p-1" name="message" type="text" placeholder="message" ></input>
                 <button className="border-2 p-1" type="submit" disabled={sizeError}>AddPost</button>
                 {sizeError &&
                     <div>Dein Bild ist viel zu groß</div>
