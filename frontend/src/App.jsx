@@ -15,7 +15,7 @@ function App() {
         fetch("http://localhost:7777/api/getPosts")
         .then(res => res.json())
         .then(data => setPosts(data))
-        },[posts])
+        },[])
   
   return (
     <postData.Provider value={posts}>

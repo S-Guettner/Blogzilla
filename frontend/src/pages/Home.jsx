@@ -9,14 +9,16 @@ const Home = () => {
 
     const posts = useContext(postData)
     
-    
-    if (!posts) return
+   
+
+    /* if (!posts) return */
 
     return (
         <div >
             <h1>HOMEEEEEEEEEE</h1>
         <Link to={'/admin'}>link to admin page</Link>
-        {posts.map((post,index) => {
+        {
+        posts?.map((post,index) => {
             return (
             <SinglePost 
             key={uuidv4()}
