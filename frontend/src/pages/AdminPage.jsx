@@ -10,9 +10,9 @@ const AdminPage = () => {
 
     
     return ( 
-        <div>
+        <div className='h-screen pt-4'>
+            <Link className=' border-2 p-2 rounded-lg m-4 hover:bg-neutral-500' to={'/'}>Go to Blog</Link>
             <InputForm setPosts={setPosts} />
-            <Link className='border-2 p-2 rounded-lg m-4 hover:bg-neutral-500' to={'/'}>Go to Blog</Link>
         </div>
      );
 }

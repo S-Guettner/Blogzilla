@@ -12,10 +12,8 @@ function App() {
     const [posts, setPosts] = useState()
     
     const [intervalState,setIntervalState] = useState(true)
-/*     setInterval(function(){ 
-    //code goes here that will be run every 5 seconds.    
-}, 1000); */
-  setInterval(() => setIntervalState(!intervalState))
+
+  setInterval(() => setIntervalState(!intervalState),1000)
 
     useEffect(() => {
         fetch("http://localhost:7777/api/getPosts")
