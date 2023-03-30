@@ -12,7 +12,7 @@ const DetailsPage = () => {
     
     return ( 
         <div>
-            <img className="mx-auto w-1/2 mb-2" src={`http://localhost:7777/${posts && posts[postIndex].image}`}></img>
+            <img className="mx-auto  mb-2 max-h-[600px]" src={`http://localhost:7777/${posts && posts[postIndex].image}`}></img>
             <div>
             <h1 className=" text-4xl mb-8 text-white bg-black p-2">{posts && posts[postIndex].title}</h1>
             <p className="px-40 mb-52">{posts && posts[postIndex].message}</p>
