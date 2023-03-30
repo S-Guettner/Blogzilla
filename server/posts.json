@@ -1,12 +1,12 @@
 [
   {
-    "title": "1",
-    "message": "11",
-    "image": "images\\5a9ab5e9bba24b623194e3d6f1909038"
+    "title": "Test BLOG 1",
+    "message": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "image": "images\\e02f9ca121a9288825f554d8ae60b681"
   },
   {
-    "title": "TEST BLOG",
-    "message": "awodawiodioawiodjkawiodüawodawkdopüawkodpawdküoaw owdiopüakdopükawokdop wopakd poawküopd oükaodkawo doawkd opawkd pawk +awkd opawjkd +awkp",
-    "image": "images\\960a5937da7fd0afc833309df7ba83f6"
+    "title": "Test BLOG 2",
+    "message": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "image": "images\\17d95de273985c2e8b2c936b70c0afa2"
   }
 ]

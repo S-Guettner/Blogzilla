@@ -2,12 +2,10 @@ import { Link } from "react-router-dom"
 
 const SinglePost = ({ post ,index }) => {
     return (
-        <Link  to={`/details/${index}`}>
+        <Link className=""  to={`/details/${index}`}>
+            <img className="w-full max-h-[600px]" src={`http://localhost:7777/${post.image}`}></img>
             <h1>{post.title}</h1>
-            <p>{post.message}</p>
-            <img style={{
-                width: "100px"
-            }} src={`http://localhost:7777/${post.image}`}></img>
+            <p className="w-full">{post.message}</p>
         </Link>
     )
 }

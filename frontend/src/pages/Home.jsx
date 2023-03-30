@@ -14,21 +14,24 @@ const Home = () => {
     if (!posts) return
 
     return (
-        <div >
+        <div>
             <h1>HOMEEEEEEEEEE</h1>
         <Link to={'/admin'}>link to admin page</Link>
-        {
-        
-        posts?.map((post,index) => {
+        <section className='flex gap-11 justify-evenly'>
+        {posts?.map((post,index) => {
             
             return (
-            <SinglePost 
-            key={uuidv4()}
-            post={post} 
-            index={index}
-            />
+            <div className='w-1/4'>
+                <SinglePost 
+                key={uuidv4()}
+                post={post} 
+                index={index}
+                />
+            </div>
+
             )
         })}
+        </section>
 
     </div>
 
