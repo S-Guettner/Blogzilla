@@ -17,7 +17,7 @@ const Home = () => {
         <div className='pb-4'>
             <div className='flex justify-center mb-4 shadow-lg pb-2'>
             <h1 className='pt-2 my-auto text-4xl underline decoration-8 decoration-[#03daff]'>BLOGZILLA</h1>
-            <img className='w-72 ml-1' src="https://ik.imagekit.io/6sicju8qu/pngwing.com.png?updatedAt=1680178528398" alt="" />
+            <img className='w-48 ml-1' src="https://ik.imagekit.io/6sicju8qu/pngwing.com.png?updatedAt=1680178528398" alt="" />
             </div>
 
         <section className='flex flex-row gap-11 justify-evenly'>
