@@ -35,7 +35,7 @@ const InputForm = ({ setPosts }) => {
         }
     }
     return (
-        <div>
+        <div className="mb-4">
             <form onSubmit={handleSubmit}>
                 {/* <input className="border-2 block p-1" name="username" type="text" placeholder="username" ></input> */}
                 <input className="border-2 block p-1" name="title" type="text" placeholder="title" ></input>
