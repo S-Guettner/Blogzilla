@@ -11,11 +11,11 @@ const DetailsPage = () => {
 
     
     return ( 
-        <div>
+        <div className='pb-4'>
             <img className="mx-auto  mb-2 max-h-[600px]" src={`http://localhost:7777/${posts && posts[postIndex].image}`}></img>
             <div>
             <h1 className=" text-4xl mb-8 text-white bg-black p-2">{posts && posts[postIndex].title}</h1>
-            <p className="px-40 mb-52">{posts && posts[postIndex].message}</p>
+            <p className="px-40 mb-9">{posts && posts[postIndex].message}</p>
 
             <Link className="border-2 p-2 rounded-md ml-4 hover:bg-neutral-500" to={'/'}>See all Blog Posts</Link>
             </div>
