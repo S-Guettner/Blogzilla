@@ -11,11 +11,17 @@ function App() {
 
     const [posts, setPosts] = useState()
     
+    const [intervalState,setIntervalState] = useState(true)
+/*     setInterval(function(){ 
+    //code goes here that will be run every 5 seconds.    
+}, 1000); */
+  setInterval(() => setIntervalState(!intervalState))
+
     useEffect(() => {
         fetch("http://localhost:7777/api/getPosts")
         .then(res => res.json())
         .then(data => setPosts(data))
-        },[])
+        },[intervalState])
   
   return (
     <postData.Provider value={posts}>
